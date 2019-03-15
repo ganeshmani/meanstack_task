@@ -1,13 +1,13 @@
-# meanstack_task
+# Angular,Node Application
 MEAN Stack Application(System Task) generally asked in an Interview
 
-######To Run the angular application
+###### For Angular
 ```
 cd client
 npm install
 ng serve
 ```
-####### To Run Express 
+###### For Express 
 ```
 npm install
 node app.js
