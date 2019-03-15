@@ -1,0 +1,60 @@
+<div class="ui placeholder segment section">
+  <div class="ui two column very relaxed stackable grid">
+    <div class="column">
+      <div class="ui form">
+        <div class="field">
+          <label>Post Title</label>
+          <div class="ui left icon input">
+            <input type="text"  [(ngModel)]="postname" placeholder="Post">
+            <!-- <i class="user icon"></i> -->
+          </div>
+        </div>
+        <div class="field">
+            <label>Description</label>
+            <div class="ui left icon input">
+              <textarea [(ngModel)]="description" placeholder="Description" ></textarea>
+              <!-- <i class="user icon"></i> -->
+            </div>
+          </div>
+        
+        <div class="ui blue submit button" (click) ="onAddPost()">Add Post</div>
+      </div>
+    </div>
+    <div class="middle aligned column ">
+      
+       
+      <!-- <div *ngFor="let item of posts; let i = index">
+          <h3 class="ui header">{{item.name}}</h3>
+          <div class="ui section divider"></div>
+      </div>     -->
+      <div class="ui items">
+        <div class="item" *ngFor="let item of posts; let i = index">
+          <div class="ui small image">
+            <img [src]="item.avatar">
+          </div>
+          <div class="content">
+            <div class="header">{{item.name}}</div>
+            <div class="meta">
+              <a class="heart" (click) ="OnUpvote(i)"> <i class="fa fa-heart" aria-hidden="true"></i> </a>
+              <span class="price">{{item.upvotes}}</span>
+              Date:
+              <span class="stay">{{item.createdAt | date:'medium'}}</span>
+              
+            </div>
+            <div class="description">
+              <p>{{item.description}}</p>
+            </div>
+          </div>
+        </div>
+       
+        
+      </div>    
+     
+      
+    </div>
+  </div>
+  <div class="ui vertical divider">
+  </div>
+</div>
+
+<router-outlet></router-outlet>

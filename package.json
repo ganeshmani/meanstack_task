@@ -1,0 +1,24 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev" : "nodemon",
+    "start" : "node app.js"
+  },
+  "author": "GaneshMani",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "joi": "^14.3.1",
+    "mongoose": "^5.4.19"
+  },
+  "devDependencies": {
+    "@angular/cli": "~7.1.4",
+    "@angular/compiler-cli": "~7.1.0"
+  }
+}

@@ -1,0 +1,11 @@
+body{
+    height: 100% !important;
+}
+
+.section{
+    height: 100% !important;
+}
+
+.fa-heart:hover{
+    color: red;
+}
