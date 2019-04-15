@@ -5,8 +5,8 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev" : "nodemon",
-    "start" : "node app.js"
+    "dev": "nodemon app.js",
+    "start": "node app.js"
   },
   "author": "GaneshMani",
   "license": "ISC",
@@ -19,6 +19,7 @@
   },
   "devDependencies": {
     "@angular/cli": "~7.1.4",
-    "@angular/compiler-cli": "~7.1.0"
+    "@angular/compiler-cli": "~7.1.0",
+    "cypress": "^3.2.0"
   }
 }
